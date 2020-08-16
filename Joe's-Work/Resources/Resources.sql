@@ -1,0 +1,29 @@
+-- CREATE TABLE covid_rows (
+-- 	cases_confirmed INT NOT NULL,
+-- 	deaths_confirmed INT NOT NULL,
+-- 	recovered_confirmed INT NOT NULL,
+-- 	city VARCHAR(100),
+-- 	state VARCHAR(100),
+-- 	province VARCHAR(100),
+-- 	country VARCHAR(100),
+-- 	lat FLOAT NOT NULL,
+-- 	long FLOAT NOT NULL,
+-- 	time VARCHAR(100) NOT NULL
+-- );
+
+-- SELECT * FROM covid_rows WHERE ...
+-- INSERT INTO covid_rows (
+-- 	cases_confirmed,
+-- 	deaths_confirmed,
+-- 	recovered_confirmed,
+-- 	city,
+-- 	state,
+-- 	province,
+-- 	country,
+-- 	lat,
+-- 	long,
+-- 	time
+-- ) VALUES (
+-- 	()
+-- )
+-- DROP TABLE covid_rows;
