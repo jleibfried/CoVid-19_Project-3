@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Go Home</title>
+    <title>Recovery</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
@@ -11,52 +11,31 @@
 
 <body>
     
-    <!-- 
-        Sourcing required bootstrap navbar
-        https://www.w3schools.com/bootstrap/bootstrap_navbar.asp 
-        https://getbootstrap.com/docs/4.0/components/navbar/
-        https://www.mtggoldfish.com/
-         -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-header">
-            <li>
-                <a href="index.html">CoVid-19 Data Analysis</a>
-            </li>
-        </div>
+    <nav class="navbar navbar-expand-xl bg-dark">
+      <div class="navbar-header">
+        <li>
+              <a href="index.html">CoVid-19 Data Analysis  </a>
+          </li>
+      </div>
 
-       
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="compare.html">Comparisons</a>
-              </li>
-              <li class="nav-item dropdown">
-                <!-- This is sloppy and straight up copied from 
-                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
-                I spent 3-4 hours trying to get the dropdown to work so I'm just going to 
-                leave it as is to go with the theme of my HTML as "eccentric" -->
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">PLOTS (of Latitude vs...)</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="recovery.html">Recovery Rate (Ankur)</a>
-                      <a href="caseDensity.html">Case Rate Density (Zoey)</a>
-                      <a href="caseVsDeath.html">Cases vs. Death (Joe)</a>
-                      <a href="table.html">Cases vs. Death (Josh)</a>
-                      
-                    </div>
+     
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+
+              <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="recovery.html">Recovery Rate</a>
+                    <a href="caseDensity.html">Case Rate Density</a>
+                    <a href="caseVsDeath.html">Cases vs. Death</a>
+                    <a href="table.html">Table of States</a>
+                    
                   </div>
-              </li>
-            </ul>
-          </div>
- 
-
-    
+                </div>
+            </li>
+          </ul>
+        </div>
     </nav>
 
 
@@ -64,7 +43,7 @@
 
 
     <header class="header">
-        <h1>Maximum Temperature</h1>
+        <h1>Recovery from CoVid-19</h1>
     </header>
 
     <div class="container">

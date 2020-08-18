@@ -16,7 +16,8 @@ h1 {
 }
 
 h2{
-  font-size: 36pt
+  color: black;
+  font-size: 36pt;
 }
 
 h3 {
@@ -36,6 +37,11 @@ h4{
 h5{
   color: red;
   font-size: 12px;
+}
+
+h6{
+  color: black;
+  font-size: 16px;
 }
 
 .navbar{
@@ -61,7 +67,7 @@ h5{
 }
 
 .dropdown {
-  position: fixed;
+  position: relative;
   border: 1px solid red;
   background-color: black(255,200,200,0.5);  
   top: 0;
@@ -69,11 +75,12 @@ h5{
   display: inline-block;
 }
 
+
+
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color:grey;
- 
+  background-color: #f1f1f1;
   min-width: 160px;
   overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -88,22 +95,44 @@ h5{
   display: block;
 }
 
+#filter-btn{
+  border: 1px solid black;
+  background-color: black;
+  color: red;
+}
+
+
+
+
+
+
+
 .show {display: block;}
 
 .header {
   height: 200px;
   padding-top: 20px;
-  background: lightblue;
+  background: rgb(2, 87, 117);;
   color: pink;
 }
 
 .header h1 {
-  padding: 60px;
+  padding: 48px;
   margin: 0;
   color: black;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
 }
+
+
+.header h2 {
+  padding: 24px;
+  margin: 0;
+  color: black;
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+}
+
 
 
 .container{
