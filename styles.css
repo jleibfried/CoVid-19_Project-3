@@ -7,7 +7,7 @@ I COULD have chosen something safer
 and more corporate acceptable but that seemed boring
 */
 body {
-  background: rgb(2, 87, 117);
+  background: #FF7171;
 }
 
 h1 {
@@ -16,17 +16,17 @@ h1 {
 }
 
 h2{
-  color: black;
+  color: #6d6e6e;
   font-size: 36pt;
 }
 
 h3 {
   font-size: 24px;
-  color: black;
+  color: #6d6e6e;
 }
 
 h4{
-  color: black;
+  color: #6d6e6e;
   font-size: smaller;
   font-style:  oblique;
   font-variant: small-caps;
@@ -35,30 +35,31 @@ h4{
 }
 
 h5{
-  color: red;
+  color: #ffaa71;
   font-size: 12px;
 }
 
 h6{
-  color: black;
+  color: #6d6e6e;
   font-size: 16px;
 }
 
 .navbar{
-  color: black;
+  color: #6d6e6e;
+  background: #6d6e6e
   
 }
 
 
 .navbar-header {
   padding: 15px;
-  background: black;
-  border: 5px solid red;
+  background: #6d6e6e;
+  border: 5px solid #ffaa71;
   border-end-end-radius: 1in;
 }
 
 .navbar-header li a{
-  color: red;
+  color: #ffaa71;
   text-decoration: none;
   font-size: x-large;
   font-style:  "Calibri";
@@ -68,8 +69,8 @@ h6{
 
 .dropdown {
   position: relative;
-  border: 1px solid red;
-  background-color: black(255,200,200,0.5);  
+  border: 1px solid #ffaa71;
+  background-color: #6d6e6e(255,200,200,0.5);  
   top: 0;
   right: 0;
   display: inline-block;
@@ -89,16 +90,16 @@ h6{
 }
 
 .dropdown-content a {
-  color: black;
+  color: #6d6e6e;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 #filter-btn{
-  border: 1px solid black;
-  background-color: black;
-  color: red;
+  border: 1px solid #6d6e6e;
+  background-color: #6d6e6e;
+  color: #ffaa71;
 }
 
 
@@ -112,14 +113,14 @@ h6{
 .header {
   height: 200px;
   padding-top: 20px;
-  background: rgb(2, 87, 117);;
+  background: #FF7171;;
   color: pink;
 }
 
 .header h1 {
   padding: 48px;
   margin: 0;
-  color: black;
+  color: #6d6e6e;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
 }
@@ -128,7 +129,7 @@ h6{
 .header h2 {
   padding: 24px;
   margin: 0;
-  color: black;
+  color: #6d6e6e;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
 }
@@ -136,7 +137,7 @@ h6{
 
 
 .container{
-  background: red;
+  background: #ffaa71;
 }
 
 .rightAlign{
