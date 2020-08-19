@@ -49,6 +49,10 @@ h6{
   font-family: Impact, Charcoal, sans-serif;
 }
 
+h7{
+  font-size: 20px;
+  color: blue;
+}
 
 .navbar{
   color: #525252;
