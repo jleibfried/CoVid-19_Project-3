@@ -14,8 +14,8 @@
     <nav class="navbar navbar-expand-xl">
         <div class="navbar-header">
           <li>
-                <a href="index.html">CoVid-19 Data Analysis  </a>
-            </li>
+                <a href="index.html">CoVid-19 Data Analysis</a>                
+          </li>
         </div>
 
        
@@ -26,10 +26,11 @@
                 <div class="dropdown">
                     <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
                     <div id="myDropdown" class="dropdown-content">
-                      <a href="recovery.html">Recovery Rate</a>
+                      
+                      <a href="casesOverTime.html">Cases Over Time</a>
                       <a href="caseDensity.html">Case Rate Density</a>
-                      <a href="caseVsDeath.html">Cases vs. Death</a>
-                      <a href="table.html">Table of States</a>
+                      <a href="recovery.html">Recovery Rate</a>
+                      <a href="table.html">Table of Cases (US)</a>
                       
                     </div>
                   </div>
@@ -40,8 +41,7 @@
 
 
 
-<body>    
-    
+  
     <div class="row">
       <div class="col-md-3">
         <br>
@@ -55,32 +55,25 @@
             Analysis and Predictions
           </h3>
 
-          <h6>
+          <h4>
             
             <br>
             We created this is project to explore two facets of CoVid-19.  First, how accurately we could build a predict model and second how best to show the what state of the world was like after 8 months of the initial cases of CoVid-19 were documented. 
             <br>
             <br>
-            The RECOVERY and CASE VS. DEATH pages are where we used machine learning to make predictions.  We took the first months of raw case data from https://api.covidtracking.com/v1/states/daily.json to make our predictions of what case data would look like a few months forward.  Then we compared our models' against the actual data and analysized their accuracy.
+            The RECOVERY and CASES OVER TIME (US) pages are where we used machine learning to make predictions.  We took the first months of raw case data from https://api.covidtracking.com/v1/states/daily.json to make our predictions of what case data would look like a few months forward.  Then we compared our models' against the actual data and analysized their accuracy.
             <br>
             <br>
             CASE DENSITY is a visualization of our data via Tableau.  It focuses on main the density of cases around the world and the United States. 
             <br>
             <br>
             The TABLE OF THE USA is drawing from the API https://api.covidtracking.com/v1/states/daily.json.  It looks at the active cases in the US states and its territories.
-          </h6>
+          </h4>
          
         </div>
       </div>
 
-      <div class="col-md-4"><a href="recovery.html">
-        <br>
-        <br>
-        <br>
-          <img src="./Resources/assets/images/recovery/recoveryThumbnail.png"  width="500" height="400">
-          <h3>Recovery</h3>
-          <br>
-        </a></div>
+      
 
       <div class="col-md-4"><a href="caseDensity.html" width="500" height="400">
         <br>
@@ -95,18 +88,31 @@
           <br>
         </a></div>
 
+        <div class="col-md-4"><a href="casesOverTime.html">
+          <br>
+            <br>
+            <br>
+          <img src="./Resources/assets/images/caseVsDeath.jpg">
+          <h3>Cases Over Time (US)</h3>
+        </a></div>
+
     </div>
     
     <div class="row">
       <div class="col-md-3">
       </div>
-      <div class="col-md-4"><a href="caseVsDeath.html">
-          <img src="./Resources/assets/images/caseVsDeath.jpg">
-          <h3>Cases Vs Deaths</h3>
-        </a></div>
+      
+
+        <div class="col-md-4"><a href="recovery.html">
+          
+            <img src="./Resources/assets/images/recovery/recoveryThumbnail.png"  width="500" height="400">
+            <h3>Recovery Rate</h3>
+            <br>
+          </a></div>
+
       <div class="col-md-4"><a href="table.html">
           <img src="./Resources/assets/images/table/tableThumbnail.png"  width="500" height="400">
-          <h3>Table of USA</h3>
+          <h3>Table of Cases (US)</h3>
         </a></div>
     </div>
     

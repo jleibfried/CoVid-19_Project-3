@@ -35,14 +35,20 @@ h4{
 }
 
 h5{
-  color: #ff9d5c;
-  font-size: 12px;
+  font-size: 96px;
+  color: #525252;
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
 }
 
+
 h6{
+  font-size: 48px;
   color: #525252;
-  font-size: 16px;
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
 }
+
 
 .navbar{
   color: #525252;
@@ -116,12 +122,14 @@ h6{
 .show {display: block;}
 
 .header {
+  position:relative;
   height: 200px;
   padding-top: 20px;
   background: #FF7171;;
 }
 
 .header h1 {
+  position:relative;
   padding: 48px;
   margin: 0;
   color: #525252;
@@ -131,6 +139,7 @@ h6{
 
 
 .header h2 {
+  position:relative;
   padding: 24px;
   margin: 0;
   color: #525252;
