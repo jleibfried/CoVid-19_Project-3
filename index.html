@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoVid-19 Data Analysis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-xl">
+    <div class="navbar-header">
+      <li>
+        <a href="index.html">CoVid-19 Data Analysis</a>
+      </li>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
+            <div id="myDropdown" class="dropdown-content">
+
+              <a href="casesOverTime.html">Cases Over Time</a>
+              <a href="caseDensity.html">Case Rate Density</a>
+              <a href="recovery.html">Recovery Rate</a>
+              <a href="table.html">Table of Cases (US)</a>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <br>
+  <br>
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <br>
+      <br>
+      <br>
+
+      
+        <h2>Analysis <br>~~ & ~~<br> Predictions</h2>
+        <br>
+        <h3>
+          
+        </h3>
+
+        <h4>
+
+          <br>
+          We created this is project to explore two facets of CoVid-19. First, how accurately we could build a predict
+          model and second how best to show the what state of the world was like after 8 months of the initial cases of
+          CoVid-19 were documented.
+          <br>
+          <br>
+          The RECOVERY and CASES OVER TIME (US) pages are where we used machine learning to make predictions. We took
+          the first months of raw case data from https://api.covidtracking.com/v1/states/daily.json to make our
+          predictions of what case data would look like a few months forward. Then we compared our models' against the
+          actual data and analysized their accuracy.
+          <br>
+          <br>
+          CASE DENSITY is a visualization of our data via Tableau. It focuses on main the density of cases around the
+          world and the United States.
+          <br>
+          <br>
+          The TABLE OF THE USA is drawing from the API https://api.covidtracking.com/v1/states/daily.json. It looks at
+          the active cases in the US states and its territories.
+        </h4>
+
+      
+    </div>
+
+
+
+    <div class="col-md-4"><a href="caseDensity.html" width="300" height="200">
+        <br>
+        <br>
+        <br>
+        <!-- Note to self 
+          Double click image so it opens in Windows Photos
+          Use the three dot dropdown in the upper right to resize to Small
+           -->
+        <img src="./Resources/assets/images/caseDensity/caseDensity.png" width="350" height="300">
+        <h3>Case Density</h3>
+        <br>
+      </a></div>
+
+    <div class="col-md-4"><a href="casesOverTime.html">
+        <br>
+        <br>
+        <br>
+        <img src="./Resources/assets/images/caseVsDeath.jpg" width="350" height="300">
+        <h3>Cases Over Time (US)</h3>
+      </a></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+
+
+    <div class="col-md-4"><a href="recovery.html">
+
+        <img src="./Resources/assets/images/recovery/recoveryThumbnail.png" width="350" height="300">
+        <h3>Recovery Rate</h3>
+        <br>
+      </a></div>
+
+    <div class="col-md-4"><a href="table.html">
+        <img src="./Resources/assets/images/table/tableThumbnail.png" width="350" height="300">
+        <h3>Table of Cases (US)</h3>
+      </a></div>
+  </div>
+</div>
+
+
+  <div>
+    <h4 class="rightAlign"><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      a J. C. Leibfried product
+    </h4>
+  </div>
+</body>
+
+
+
+
+
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        console.log(i);
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+</html>
