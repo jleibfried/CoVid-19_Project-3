@@ -16,17 +16,17 @@ h1 {
 }
 
 h2{
-  color: #6d6e6e;
+  color: #525252;
   font-size: 36pt;
 }
 
 h3 {
   font-size: 24px;
-  color: #6d6e6e;
+  color: #525252;
 }
 
 h4{
-  color: #6d6e6e;
+  color: #525252;
   font-size: smaller;
   font-style:  oblique;
   font-variant: small-caps;
@@ -35,25 +35,25 @@ h4{
 }
 
 h5{
-  color: #ffaa71;
+  color: #ff9d5c;
   font-size: 12px;
 }
 
 h6{
-  color: #6d6e6e;
+  color: #525252;
   font-size: 16px;
 }
 
 .navbar{
-  color: #6d6e6e;
-  background: #6d6e6e
+  color: #525252;
+  background: #525252
   
 }
 
 
 .navbar-header {
   padding: 15px;
-  background: #6d6e6e;
+  background: #525252;
   border: 5px solid #ffaa71;
   border-end-end-radius: 1in;
 }
@@ -70,7 +70,7 @@ h6{
 .dropdown {
   position: relative;
   border: 1px solid #ffaa71;
-  background-color: #6d6e6e(255,200,200,0.5);  
+  background-color: #525252(255,200,200,0.5);  
   top: 0;
   right: 0;
   display: inline-block;
@@ -90,20 +90,25 @@ h6{
 }
 
 .dropdown-content a {
-  color: #6d6e6e;
+  color: #525252;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
 #filter-btn{
-  border: 1px solid #6d6e6e;
-  background-color: #6d6e6e;
+  border: 1px solid #525252;
+  background-color: #525252;
   color: #ffaa71;
 }
 
+#form-group{
+  background-color: #525252;
+}
 
-
+.filters.list-group-item{
+  background-color: #525252;
+}
 
 
 
@@ -114,13 +119,12 @@ h6{
   height: 200px;
   padding-top: 20px;
   background: #FF7171;;
-  color: pink;
 }
 
 .header h1 {
   padding: 48px;
   margin: 0;
-  color: #6d6e6e;
+  color: #525252;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
 }
@@ -129,7 +133,7 @@ h6{
 .header h2 {
   padding: 24px;
   margin: 0;
-  color: #6d6e6e;
+  color: #525252;
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
 }
