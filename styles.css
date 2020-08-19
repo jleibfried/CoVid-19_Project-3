@@ -1,13 +1,9 @@
 /* 
-This is caustic on the eyes and that's the point
-
-Choosing bad colors and themes was meant 
-to highlight the vast array of tools CSS offers.
-I COULD have chosen something safer 
-and more corporate acceptable but that seemed boring
+Color scheme based of this site
+https://colorhunt.co/palette/201781
 */
 body {
-  background: #FF7171;
+  background: #e66767;
 }
 
 h1 {
@@ -54,6 +50,9 @@ h7{
   color: blue;
 }
 
+img {
+  border: 5px solid #ececec;
+}
 .navbar{
   color: #525252;
   background: #525252
