@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoVid-19 US Table</title>
+    <title>Table of States</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
@@ -14,42 +14,43 @@
   <nav class="navbar navbar-expand-xl bg-dark">
     <div class="navbar-header">
       <li>
-            <a href="index.html">CoVid-19 Data Analysis  </a>
-        </li>
+        <a href="index.html">CoVid-19 Data Analysis </a>
+      </li>
     </div>
 
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown">
 
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="recovery.html">Recovery Rate</a>
-                  <a href="caseDensity.html">Case Rate Density</a>
-                  <a href="caseVsDeath.html">Cases vs. Death</a>
-                  <a href="table.html">Table of States</a>
-                  
-                </div>
-              </div>
-          </li>
-        </ul>
-      </div>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
+            <div id="myDropdown" class="dropdown-content">
+
+              <a href="casesOverTime.html">Cases Over Time</a>
+                      <a href="caseDensity.html">Case Rate Density</a>
+                      <a href="recovery.html">Recovery Rate</a>
+                      <a href="table.html">Table of Cases (US)</a>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+
   </nav>
 
-    <header class="header">
+    <!-- 
+        Removed because I couldn't get the header to not print over the body.
+        It's probably something with the position but time could not be spared
+        (though I was able to scratch out enough to write this out).
+        <header class="header">
         <h1>Table of CoVid-19</h1>
         <h2>By US States and Territories</h2>
-    </header>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    </header> -->
+    <h5>Table of CoVid-19</h5>
+    <h6>By US States and Territories</h6>
+    
 
     <div class="container">
       <div class="row margin-top-50">
