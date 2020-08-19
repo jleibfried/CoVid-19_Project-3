@@ -3,111 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>viz2</title>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
+    <title># of Cases</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     
-    <!-- 
-        Sourcing required bootstrap navbar
-        https://www.w3schools.com/bootstrap/bootstrap_navbar.asp 
-        https://getbootstrap.com/docs/4.0/components/navbar/
-        https://www.mtggoldfish.com/
-         -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="navbar-header">
-            <li>
-                <a href="index.html">HTML/CSS HOMEWORK</a>
-            </li>
-        </div>
+    <nav class="navbar navbar-expand-xl bg-dark">
+      <div class="navbar-header">
+        <li>
+              <a href="index.html">CoVid-19 Data Analysis</a>
+          </li>
+      </div>
 
-        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a href="nav-item nav-link" href="viz0.html">Lat vs Max Temp</a>
-                <a href="nav-item nav-link" href="viz1.html">Lat vs Humidity</a>
-                <a href="nav-item nav-link" href="viz2.html">Lat vs Clouds</a>
-                <a href="nav-item nav-link" href="viz3.html">Lat vs Wind</a>
-                <a href="nav-item nav-link" href="compare.html">Comparison</a>
-                <a href="nav-item nav-link" href="data.html">Data</a>
-        
-            </div>
-        
-        </div>
-     -->
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="data.html">Data</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="compare.html">Comparisons</a>
-              </li>
-              <li class="nav-item dropdown">
-                <!-- This is sloppy and straight up copied from 
-                https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_js_dropdown
-                I spent 3-4 hours trying to get the dropdown to work so I'm just going to 
-                leave it as is to go with the theme of my HTML as "eccentric" -->
-                <div class="dropdown">
-                    <button onclick="myFunction()" class="dropbtn">PLOTS (of Latitude vs...)</button>
-                    <div id="myDropdown" class="dropdown-content">
-                      <a href="viz0.html">Max Temp</a>
-                      <a href="viz1.html">Humidity</a>
-                      <a href="viz2.html">Clouds</a>
-                      <a href="viz3.html">Wind</a>
-                    </div>
+     
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+
+              <div class="dropdown">
+                  <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
+                  <div id="myDropdown" class="dropdown-content">
+                    <a href="recovery.html">Recovery Rate</a>
+                    <a href="caseDensity.html">Case Rate Density</a>
+                    <a href="caseVsDeath.html">Cases vs. Death</a>
+                    <a href="table.html">Table of States</a>
+                    
                   </div>
-              </li>
-            </ul>
-          </div>
- 
-
-    
+                </div>
+            </li>
+          </ul>
+        </div>
     </nav>
 
-
-
-<!-- This is repeated code for each html file.  I don't know but I would like to know if this could 
-be replace with another file and a method call -->
 
 
 
 
     <header class="header">
-        <h1>Cloudiness</h1>
+        <h1>Number of Cases vs. Time in the US</h1>
     </header>
 
     <div class="container">
         <div class="row">
-          <div class="col-sm-6 col-md-3">
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Impacts of Latitude on Cloudiness</h2>
-            <br>
-            <h3>There appears to be no correlation between the latitude of the cities and 
-              how cloudy they are.  A majority of cities appear to have 0 cloud cover 
-              regardless of whether or not they have high or low latitude.  An interesting note 
-              is all the data appears in bands because it is estimated and is not precisely tracked 
-              as the other measures we look at.
-              <br>
-              <a href ="https://www.sserc.org.uk/wp-content/uploads/2012/04/Resource-2_2-Measuring-Cloud-Cover.pdf"
-                target="_blank" >
-                source</a>
+            <div class="col-sm-6 col-md-3">
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>Impacts of Latitude on Maximum Temperature</h2>
+                <br>
+                <h3>As we can clearly see from the graph temperature is directly correlated
+                    with how far from the equator a city is.  Latitude is an excellent predictor
+                    of temperature of cities with colder temperatures occuring near the poles and
+                    warmer temperature at the equator
 
-            </h3>
-        </div>
-        <div class="col-sm-6 col-md-3">
-            <img src="./Resources/assets/images/Fig3.png">
-        </div>
+                </h3>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <img src="./Resources/assets/images/Fig1.png">
+            </div>
         </div>
     </div>
 
