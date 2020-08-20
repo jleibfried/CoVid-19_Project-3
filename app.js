@@ -51,18 +51,11 @@ todaysData.forEach((trimmedData) => {
   button.on("click", runEnter);
   form.on("submit",runEnter); 
 
-// added this Aug 18, 2020
-// d3.event.preventDefault();
-
-
-
-  
 
 function runEnter() {
   // Prevent the page from refreshing
   d3.event.preventDefault();
   console.log("inside the function");
-    
     
     
     // Select the input element and get the raw HTML node
@@ -76,7 +69,12 @@ function runEnter() {
     cleaningHouse.html("");
     // var tbody = d3.select("tbody");
 
-    let filteredState = todaysData.filter(stateData => stateData.state === inputValue);
+    // Requires exact match
+    // let filteredState = todaysData.filter(stateData => stateData.state === inputValue);
+
+    // Only needs to contain letters
+    let filteredState = todaysData.filter(stateData => stateData.state.toString().includes(inputValue.toString()));
+    
 
     console.log(filteredState);
 
