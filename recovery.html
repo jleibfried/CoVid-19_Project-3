@@ -49,7 +49,7 @@
 
   <h5>Recovery from CoVid-19</h5>
   <br>
-  <h6>Machine Learning Predictions</h6>
+  <h6>Formula based Predictions</h6>
 
 
 
@@ -66,12 +66,14 @@
         <br>
         <br>
         <br>
-        <h2>SECOND TITLE</h2>
+        <h2>Analysis</h2>
         <br>
-        <h3>
-          BROAD DESCRIPTION OF WHAT THIS PAGE IS ABOUT
+        <p>
+          The data used was taken from publicly accessible JHU repository on Github <a href = "https://github.com/CSSEGISandData/COVID-19" target="_blank">John Hopkins University Data Repo</a> 
+          to derive our predictions of what case data would look like a few months forward and as to how were the predictions made during the time this pandemic started.
+          We then compared our models against the actual data and analysized their accuracy.
 
-        </h3>
+        </p>
       </div>
       <div class="col-md-6">
         <br>
@@ -82,10 +84,22 @@
         <br>
         <br>
         <br>
-        <h3>DESCRIPTION OF GRAPH HERE</h3>
+        <p>
+          Formula used: Rn=Rn−1+(Cn−9−Rn−1)∗0.07
+          <br>
+          <br>
+
+          What it implies is that on a given day, of the cases which were first reported 9 days previously 7% of those cases would have either recovered or passed away. 
+          After 16 days therefore 49% of cases would have recovered or passed away and after 23 days 98% of cases would have recovered or passsed away.
+          <br>
+          <br>
+          This formula is only being used to predict the number of recoveries from the time that JHU data is not available.We can compare the results of this formula to the existing data from JHU to show the level of fit. 
+          This can be seen in the following graphs
+
+
+        </p>
         <br>
-        <br>
-        <br>
+      
 
       </div>
     </div>
@@ -105,16 +119,25 @@
         <br>
         <img src="./Resources/assets/images/recovery/Global_predicted_recoveries_VS_USA.png">
 
+        <br>
+        <br>
+        <p>
+
+          <h3>Conclusion</h3>
+          <br>
+          <br>
+          These predictions as we can see from the graphs were accurate to a certain extent initially when the recovery data wasn't available from the hospital.
+          During our analysis for the recent data, we found that the prediction using this formula still holds good with just 1.7% difference between the actual recoveries
+          and the predicted numbers.
+          <br>
+          The predictive analysis also showed that the formula worked better during the first few months when the cases were lower and now when the cases are high.
+
+
+        </p>
+        <br>
 
         <br>
         <br>
-        <br>
-        <h3>DESCRIPTION OF GRAPH HERE</h3>
-        <br>
-        <br>
-        <br>
-
-
       </div>
     </div>
   </div>
@@ -129,26 +152,15 @@
     </div>
 
     <div class="col-md-3">
-      <h3>Additionally information on the Python/Pandas
-        code can be found at the following links:</h3>
-    </div>
 
-    <div class="col-md-3">
-      <h3>INSERT SHORT DESCRIPTION </h3>
       <br>
       <a href="./Resources/assets/html/Global_report.html" target="_blank"><h7>Global Report</h7>
       </a>
       <br>
-      <br>
-      <h3>INSERT SHORT DESCRIPTION </h3>
-      <br>
       <a href="./Resources/assets/html/China_report.html" target="_blank"><h7>China Report</h7>
       </a>
       <br>
-      <br>
-      <h3>INSERT SHORT DESCRIPTION </h3>
-      <br>
-      <a href="./Resources/assets/html/US_report.html" target="_blank"><h7>US Report</h7>
+       <a href="./Resources/assets/html/US_report.html" target="_blank"><h7>US Report</h7>
       </a>
     </div>
 
@@ -161,7 +173,6 @@
       <br>
       <br>
       <br>
-      a J. C. Leibfried product
     </h4>
   </div>
 </body>
