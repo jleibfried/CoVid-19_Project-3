@@ -58,8 +58,7 @@
           <aside class="filters">
             <div class="panel panel-default">
               
-              <!-- Add this back in when I have more searchable features
-              <div class="panel-heading">Filter Search</div> -->
+              <div class="panel-heading">Filter Search</div>
               
               <div class="panel-body">
                 <form>
@@ -68,6 +67,15 @@
                       <li class="filter list-group-item">
                         <label for="date">Enter a State</label>
                         <input class="form-control" id="stateName" type="text" placeholder="MN">
+                        <li class="filter list-group-item">
+                          <label for="city">State with Less than X Deaths</label>
+                          <input class="form-control" id="lessDeaths" type="text" placeholder="X">
+                        </li>
+                        <li class="filter list-group-item">
+                          <label for="state">State with More than Y Deaths</label>
+                          <input class="form-control" id="moreDeaths" type="text" placeholder="Y">
+                        </li>
+
                       </li>
                     </ul>
                   </div>
