@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoVid-19 Data Analysis</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- Adding some test text -->
+
+<body>
+
+  <nav class="navbar navbar-expand-xl">
+    <div class="navbar-header">
+      <li>
+        <a href="index.html">CoVid-19 Data Analysis</a>
+      </li>
+    </div>
+
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown">
+
+          <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
+            <div id="myDropdown" class="dropdown-content">
+
+              <a href="casesOverTime.html">Cases Over Time</a>
+              <a href="caseDensity.html">Case Rate Density</a>
+              <a href="recovery.html">Recovery Rate</a>
+              <a href="table.html">Table of Cases (US)</a>
+
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <br>
+  <br>
+  <br>
+  <div class="container">
+  <div class="row">
+    <div class="col-md-3">
+      <br>
+      <br>
+      <br>
+
+      
+        <h2>Analysis & <br> Predictions</h2>
+        <br>
+        <h3>
+          <p>          
+            We created this project to explore two facets of CoVid-19. First, how accurately we could build a prediction
+            model and second how best to show how the countries of the world looked like after 8 months of the initial cases 
+            of CoVid-19 were documented.</p>
+        </h3>
+
+      <p>
+
+ 
+    </div>
+
+
+
+    <div class="col-md-4"><a href="caseDensity.html" width="300" height="200">
+        <br>
+        <br>
+        <br>
+        <!-- Note to self 
+          Double click image so it opens in Windows Photos
+          Use the three dot dropdown in the upper right to resize to Small
+           -->
+        <img src="./Resources/assets/images/caseDensity/caseDensity.png" width="350" height="300">
+        <h3>Case Density</h3>
+        <br>
+      </a></div>
+
+      <div class="col-md-4"><a href="casesOverTime.html">
+        <br>
+        <br>
+        <br>
+        <img src="./Resources/assets/images/ML/Predict-Link.png" width="350" height="300">
+        <h3>Cases Over Time (US)</h3>
+      </a></div>
+
+  </div>
+
+  <div class="row">
+    <div class="col-md-3">
+    </div>
+
+
+    <div class="col-md-4"><a href="recovery.html">
+
+        <img src="./Resources/assets/images/recovery/recoveryThumbnail.png" width="350" height="300">
+        <h3>Recovery Rate</h3>
+        <br>
+      </a></div>
+
+    <div class="col-md-4"><a href="table.html">
+        <img src="./Resources/assets/images/table/tableThumbnail.png" width="350" height="300">
+        <h3>Table of Cases (US)</h3>
+      </a></div>
+  </div>
+</div>
+
+
+  <div>
+    <h4 class="rightAlign"><br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </h4>
+  </div>
+</body>
+
+
+
+
+
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        console.log(i);
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+
+<h6>Data Source</h6>
+<div class="row">
+
+  <div class="col-md-3">
+  </div>
+
+
+
+  <div class="col-md-3">
+    <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank"><h7>John Hopkins University Data Repo</h7>
+    </a>
+  </div>
+
+</div>
+
+
+<div>
+  <h4 class="rightAlign"><br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </h4>
+</div>
+</body>
+
+
+
+</html>
