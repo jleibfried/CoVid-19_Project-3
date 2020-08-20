@@ -3,131 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cases Over Time</title>
+    <title>Machine Learning Predictions</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
   <nav class="navbar navbar-expand-xl">
     <div class="navbar-header">
       <li>
         <a href="index.html">CoVid-19 Data Analysis </a>
       </li>
     </div>
-
-
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item dropdown">
-
           <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Menu to Investigations</button>
             <div id="myDropdown" class="dropdown-content">
-
               <a href="casesOverTime.html">Cases Over Time</a>
               <a href="caseDensity.html">Case Rate Density</a>
               <a href="recovery.html">Recovery Rate</a>
               <a href="table.html">Table of Cases (US)</a>
-
             </div>
           </div>
         </li>
       </ul>
     </div>
-
   </nav>
 
-
-
-  <h5>Cases in the US Over Time</h5>
+  <h5>Machine Learning</h5>
   <br>
-  <h6>Machine Learning Predictions</h6>
-
-
+  <h6>Predicting with Linear Regression</h6>
 
   <div class="container">
-
     <div class="row">
-
       <div class="col-md-3">
       </div>
     </div>
-
     <div class="row">
       <div class="col-md-3">
         <br>
         <br>
         <br>
-        <h2>SECOND TITLE</h2>
+        <h2>Why (Not) Linear Regression Modeling</h2>
         <br>
         <h3>
-          BROAD DESCRIPTION OF WHAT THIS PAGE IS ABOUT
-
+          Given that there are periods of increasing and decreasing numbers of cases, it can be tempting
+          to calculate prior slopes and use them to predict short-term future case counts.  One simple solution
+          would be to grab an earlier period of recorded case counts, calculate the average change in the number
+          of cases over time and use the calculations to predict cases when an apparent surge is on the rise.
+        </h3>
+        <br>
+        <h3>
+          This is linear regression modeling, and thanks to machine learning libraries such as sklearn, it is easy
+          to find the most accurate estimated linear relationship between the number of days that have passed and
+          the number of cases that have been recorded.  A short-sighted individual will assume that finding the most
+          accurate linear relationship will now be so easy to find that it will be most effective in predicting future
+          case numbers as an outbreak appears to start.
+        </h3>
+        <br>
+        <h3>
+          However, as the charts on the right demonstrate, this is not a reliable means of prediction!
         </h3>
       </div>
+      <div class="col-md-8">
+        <br>
+        <br>
+        <br>
+        <img src="./Resources/assets/images/ML/Confirmed_2020-05-01_through_2020-05-30_pred.png" width=500>
+        <br>
+        <br>
+        <br>
+        <h3>
+          This chart contains the data collected for the month of May, 2020, in black dots.  The red line
+          was created using the sklearn library's linear regression functions and the data for that time period.
+          It is also worthy note that the data and prediction line appear to intersect only once before skewing
+          away from each other between the 34 and 36-day mark.  In adddition, the resulting R&sup2;-value within
+          this data set is ~0.5772; meaning the line of best fit for this time interval has over 57% chance of
+          varying from the actual result.  It is worth repeating that this is the best line of fit we are starting with,
+          and already it has proved to be unreliable for the data it is meant to fit!
+        </h3>
+        <br>
+        <img src="./Resources/assets/images/ML/Confirmed_2020-06-01_through_2020-06-30_test.png" width=500>
+        <br>
+        <h3>
+          This next chart contains the same red line formed from the month of May, only this time the data points
+          plotted in black are for the month of June, 2020.  The R&sup2;-value is now ~(-0.8031); indicating a change
+          in difference of over 1.3 from the prior data set's R&sup2;-value.  The fact it is negative indicates that the difference
+          in the predicted and actual data is so large that the mean of the predicted values has a stronger likelihood of predicting
+          the case count than our line of best fit from May!
+        </h3>
+        <br>
+        <img src="./Resources/assets/images/ML/Confirmed_2020-07-01_through_2020-07-31_test.png" width=500>
+        <br>
+        <h3>
+          The final chart (directly above) was formed with the same line, but for the month of July, 2020.  It is in
+          this chart that we find a surprising change in predictability.  The R&sup2;-value for this data set is ~0.2418;
+          the lowest of all three charts.  While on the surface this appears to be a very good means of predicting July 2020 COVID-19
+          case counts, this only works if we do not take the other two months into consideration.
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+      </div>
+    </div>
+<!-- 
+    <div class="row">
+      <div class="col-md-3"></div>
       <div class="col-md-6">
         <br>
         <br>
         <br>
-        <img src="./Resources/assets/images/recovery/Global_predicted_recoveries_VS_China.png">
-
         <br>
         <br>
         <br>
-        <h3>DESCRIPTION OF GRAPH HERE</h3>
         <br>
         <br>
         <br>
-
       </div>
-    </div>
-    <div class="row">
-
-      <div class="col-md-3">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-3">
-
-      </div>
-      <div class="col-md-6">
-        <br>
-        <br>
-        <br>
-        <img src="./Resources/assets/images/recovery/Global_predicted_recoveries_VS_USA.png">
-
-
-        <br>
-        <br>
-        <br>
-        <h3>DESCRIPTION OF GRAPH HERE</h3>
-        <br>
-        <br>
-        <br>
-
-
-      </div>
-    </div>
+    </div> -->
   </div>
-
 
   <br>
   <br>
   <h6>External Links</h6>
   <div class="row">
-
     <div class="col-md-3">
     </div>
-
     <div class="col-md-3">
       <h3>Additionally information on the Python/Pandas
         code can be found at the following links:</h3>
     </div>
-
     <div class="col-md-3">
       <h3>INSERT SHORT DESCRIPTION </h3>
       <br>
@@ -146,9 +155,7 @@
       <a href="./Resources/assets/html/US_report.html" target="_blank"><h7>US Report</h7>
       </a>
     </div>
-
   </div>
-
 
   <div>
     <h4 class="rightAlign"><br>
@@ -160,7 +167,6 @@
     </h4>
   </div>
 </body>
-
 
 <script>
   /* When the user clicks on the button, 
@@ -183,5 +189,4 @@
     }
   }
 </script>
-
 </html>
