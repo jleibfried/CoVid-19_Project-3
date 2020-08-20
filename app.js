@@ -55,30 +55,60 @@ todaysData.forEach((trimmedData) => {
 function runEnter() {
   // Prevent the page from refreshing
   d3.event.preventDefault();
-  console.log("inside the function");
-    
-    
+  
     // Select the input element and get the raw HTML node
     let inputElement = d3.select("#stateName");
+    let inputLess = d3.select("#lessDeaths");
+    let inputMore = d3.select("#moreDeaths");
+
     let inputValue = inputElement.property("value");
+    let inputLessValue = inputLess.property("value");
+    let inputMoreValue = inputMore.property("value");
+
+    // console.log(inputValue);
+    // console.log(inputLessValue);
+    // console.log(inputMoreValue);
     
-    console.log(inputValue);
+    let filteredState;
+    let filteredInputLessValue;
+    let filteredInputMoreValue;
+    
+
+    console.log(typeof parseInt(inputLessValue));
+    console.log(parseInt(inputLessValue));
 
     // Deleting init table
     let cleaningHouse = d3.select("tbody");
     cleaningHouse.html("");
-    // var tbody = d3.select("tbody");
 
     // Requires exact match
     // let filteredState = todaysData.filter(stateData => stateData.state === inputValue);
 
     // Only needs to contain letters
-    let filteredState = todaysData.filter(stateData => stateData.state.toString().includes(inputValue.toString()));
     
+    if(inputValue==""){
+      filteredState = todaysData;
+    }else{
+     filteredState = todaysData.filter(stateData => stateData.state.toString().includes(inputValue.toString()));
+    }
 
-    console.log(filteredState);
+    if(inputLessValue==""){
+      filteredInputLessValue = filteredState;
+    }else{
+      filteredInputLessValue = filteredState.filter(stateData => parseInt(stateData.death) < parseInt(inputLessValue));
+    }
 
-    filteredState.forEach((stateChoice) => {
+    if(inputMoreValue==""){
+      filteredInputMoreValue = filteredInputLessValue;
+    }else{
+      filteredInputMoreValue = filteredInputLessValue.filter(stateData => parseInt(stateData.death) > parseInt(inputMoreValue));
+    }
+
+
+
+    // console.log(filteredState);
+
+    filteredInputMoreValue.forEach((stateChoice) => {
       let row = cleaningHouse.append("tr");
       Object.entries(stateChoice).forEach(([key, value]) => {
         var cell = row.append("th");
